@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>jQuery对象转化成DOM对象</title>
+    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+<div>元素一</div>
+<div>元素二</div>
+<div>元素三</div>
+
+<script type="text/javascript">
+    var $div = $('div'); //jQuery对象
+    //? div = ?
+    var div=$div.get(0);
+    div.style.color = 'red'; //操作dom对象的属性
+</script>
+
+</body>
+
+</html>
+
+<!--jQuery是一个类数组对象，而DOM对象就是一个单独的DOM元素。-->
